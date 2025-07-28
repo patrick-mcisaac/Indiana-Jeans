@@ -1,14 +1,19 @@
+import { setSocioLocationId } from "./transientState.js"
+
 export const LocationChoices = async () => {
-    //TODO: Fetch locations from the API
+    
+    // Fetch locations from the API
     const response = await fetch('http://localhost:8088/socioLocations')
     const locations = await response.json()
+
+    document.addEventListener('click', setLocationChoices)
 
     let html = `
     <div class='survey-input'>
         <h2>What type of area do you live in?</h2>
    
     `
-    //TODO:: generate radio buttons and andd to html
+    // generate radio buttons and andd to html
     for (const location of locations) {
         html+= `
         <input type='radio' name='location' value='${location.id}' id='location-${location.id}'>
@@ -21,3 +26,10 @@ export const LocationChoices = async () => {
      `
      return html
 }
+
+const setLocationChoices = (chosenLocation) => {
+    if(chosenLocation.target.name === 'location'){
+        const id = parseInt(chosenLocation.target.value)
+        setSocioLocationId(id)
+    }
+} 
