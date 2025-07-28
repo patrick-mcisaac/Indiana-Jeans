@@ -1,0 +1,32 @@
+sequenceDiagram
+Browser ->> Main: load and execute
+
+Note over Main: call render()
+
+Main ->> JeansChoices: call JeanChoices()
+
+Note over JeanChoices: Generate HTML
+
+JeansChoices -->> Main: Returns HTML questionnaire
+
+Main ->> LocationChoices: call LocationChoices()
+
+LocationChoices ->> JSON Server Api: GET request to /socioLocations
+
+JSON Server Api ->> database.json: Read socioLocations data
+
+database.json -->> JSON Server Api: Return socioLocations array
+
+JSON Server Api -->> LocationChoices: Return location data
+
+loop
+    Note over LocationChoices: Generate HTML with location data
+end
+
+LocationChoices ->> Main: Return generated HTML
+
+Note over main: Combine HTML from all components
+
+Main ->> DOM: Update innerHTML
+
+DOM -->> User: Display rendered HTML
