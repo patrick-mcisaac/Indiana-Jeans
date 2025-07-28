@@ -1,0 +1,10 @@
+Table submissions {
+    id int [pk]
+    ownsBlueJeans bool
+    socioLocationId int [ref: > socioLocations.id]
+}
+
+Table socioLocations {
+    id int [pk]
+    label varchar
+}

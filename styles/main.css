@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --denim-dark: #151e3f;
+    --denim-medium: #28559a;
+    --denim-light: #3778c2;
+    --denim-faded: #ecf0f3;
+    --denim-stitch: #f0c808;
+    --denim-button: #ea3546;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--denim-dark);
+    background: radial-gradient(circle at center, #cbcbcb 0%, #d9e7ff 100%);}
+
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    border-bottom: .4rem solid var(--denim-stitch);
+    margin: 0 20rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0 0 0;
+}
+
+.survey-input {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 60rem;
+    gap: 4rem;
+    padding: 8rem;
+    border: 1px solid var(--denim-dark);
+    box-shadow:  -1px 1px 4px var(--denim-light), inset 1px 0px 2px var(--denim-button);
+    border-radius: 1px;
+    background: linear-gradient(10deg, #d0dbf3 0%, #ccddff 100%);}
+
+input[type="radio"]{
+    transform: scale(1.2);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+label {
+    margin-left: -3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
