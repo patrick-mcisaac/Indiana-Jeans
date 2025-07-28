@@ -76,3 +76,15 @@ label {
     font-size: 1.6rem;
     cursor: pointer;
 }
+
+button {
+    margin: 5rem;
+    cursor: pointer;
+    padding: 2rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    background-color: var(--denim-dark);
+    color: var(--denim-button);
+    font-weight: bold;
+    text-shadow: 0px 2px 1px black, -3px 3px 1px black;
+}

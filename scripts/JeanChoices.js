@@ -10,8 +10,6 @@ export const JeanChoices = () => {
             <label for='yes'>Yes</label>
             <input type='radio' id='no' name='ownsJeans' value='false' />
             <label for='no'>No</label>
-            <input type='radio' id='maybe' name='ownsJeans' value='null' />
-            <label for='maybe'>Maybe</label>
         </div>
     `
     return html

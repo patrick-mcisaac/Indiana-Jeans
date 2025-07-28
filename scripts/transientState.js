@@ -1,6 +1,6 @@
 // Set up the transient state data structure and provide initial values
 const transientState = {
-    ownsBlueJeans: false,
+    ownsBlueJeans: null,
     socioLocationId: 0
 }
 
@@ -12,4 +12,25 @@ export const setOwnsBlueJeans = (chosenOwnership) => {
 
 export const setSocioLocationId = (chosenLocation) => {
     transientState.socioLocationId = chosenLocation
+}
+
+export const saveSurveySubmission = async () => {
+    // start building the POST request here
+    const postOptions = {
+        method: 'POST',
+        headers: {
+            "content-Type": "application/json"
+        },
+        body: JSON.stringify(transientState)
+    }
+
+    // send to api
+    
+    transientState.ownsBlueJeans === true || transientState.ownsBlueJeans ===false && transientState.socioLocationId > 0?
+        await fetch('http://localhost:8088/submissions', postOptions):
+        window.alert('You must complete the form')
+
+
+    console.log('saving survey to database...')
+    console.log(transientState)
 }

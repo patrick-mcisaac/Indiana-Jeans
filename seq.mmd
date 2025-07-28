@@ -30,3 +30,16 @@ Note over main: Combine HTML from all components
 Main ->> DOM: Update innerHTML
 
 DOM -->> User: Display rendered HTML
+
+User ->> SubmissionButton: Clicks Submit btn
+
+SubmissionButton ->> TransientState: handleSurveySubmission()
+
+Note over TransientState: saveSurveySubmission()
+
+TransientState ->> JSON Server Api: POST request with transient state
+
+JSON Server Api ->> database.json: Save data to database
+
+JSON Server Api -->> TransientState: Return response (201 Created)
+
