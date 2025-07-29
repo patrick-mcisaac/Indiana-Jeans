@@ -19,10 +19,7 @@ const render = async () => {
     `
 }
 
+// create event listener for our custom event
+document.addEventListener("newSubmissionCreated", render)
+
 render()
-
-// DISPLAYING WITH MAP  
-
-// At the end  so read mdn on map and join and practice
-
-// then refactor some of my code to use map

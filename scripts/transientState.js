@@ -30,7 +30,6 @@ export const saveSurveySubmission = async () => {
         await fetch('http://localhost:8088/submissions', postOptions):
         window.alert('You must complete the form')
 
-
-    console.log('saving survey to database...')
-    console.log(transientState)
+    const newSubmissionEvent = new CustomEvent("newSubmissionCreated")
+    document.dispatchEvent(newSubmissionEvent)
 }

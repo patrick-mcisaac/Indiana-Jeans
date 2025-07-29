@@ -13,15 +13,25 @@ export const LocationChoices = async () => {
         <h2>What type of area do you live in?</h2>
    
     `
-    // generate radio buttons and andd to html
-    for (const location of locations) {
+    // generate radio buttons and add to html
+/*     for (const location of locations) {
         html+= `
         <input type='radio' name='location' value='${location.id}' id='location-${location.id}'>
         <label for='location-${location.id}'>${location.label}</label>
         `
     }
+ */
+    // try with map() instead of for of loop
+
+    const locationString = locations.map((location) => {
+        return `
+        <input type='radio' name='location' value='${location.id}' id='location-${location.id}'>
+        <label for='location-${location.id}'>${location.label}</label>
+        `
+    }).join(' ')
 
     html += `
+     ${locationString}
      </div>
      `
      return html

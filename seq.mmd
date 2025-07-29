@@ -25,7 +25,7 @@ end
 
 LocationChoices ->> Main: Return generated HTML
 
-Note over main: Combine HTML from all components
+Note over Main: Combine HTML from all components
 
 Main ->> DOM: Update innerHTML
 
@@ -43,3 +43,16 @@ JSON Server Api ->> database.json: Save data to database
 
 JSON Server Api -->> TransientState: Return response (201 Created)
 
+TransientState ->> DOM: Dispatch "newSubmission Created"
+
+DOM ->> Main: "newSubmissionCreated" event listener triggered
+
+Main ->> JSON Server Api: Fetch latest submissions
+
+JSON Server Api ->> database.json: GET request
+
+database.json -->> JSON Server Api: Return submissions
+
+JSON Server Api -->> Main: Return submissions data
+
+Main ->> DOM: Update DOM with new data
