@@ -6,7 +6,7 @@ export const JeanChoices = () => {
     // make radio buttons for jean choices
     let html= `
     <div class='survey-input'>
-        <h2>DO you own a pair of blue jeans?</h2>
+        <h2>Do you own a pair of blue jeans?</h2>
         <label>
             <input type='radio' name='ownsJeans' value='true'> Yes
         </label>
