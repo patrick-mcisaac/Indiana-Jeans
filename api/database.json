@@ -9,6 +9,46 @@
       "ownsBlueJeans": true,
       "socioLocationId": 2,
       "id": 2
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 3,
+      "id": 3
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 5,
+      "id": 4
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 1,
+      "id": 5
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 3,
+      "id": 6
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 2,
+      "id": 7
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 4,
+      "id": 8
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 5,
+      "id": 9
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 4,
+      "id": 10
     }
   ],
   "socioLocations": [
@@ -27,6 +67,10 @@
     {
       "id": 4,
       "label": "Rural"
+    },
+    {
+      "label": "Metropolitan",
+      "id": 5
     }
   ]
 }
