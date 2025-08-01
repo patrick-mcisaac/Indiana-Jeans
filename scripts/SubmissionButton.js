@@ -1,4 +1,4 @@
-import { saveState, saveYearState, saveBrandState } from "./transientState.js"
+import { saveState } from "./transientState.js"
 import { updateBrandNameState } from "./BrandNames.js"
 import { updateYearState } from "./PurchaseYear.js"
 
@@ -8,9 +8,9 @@ const handleSubmit = async (e) => {
     if(e.target.id === 'submission-button'){
         // get state and post to DB
         // update purchase year and brand
-        await saveYearState()
-        await saveBrandState()
+
         await updateBrandNameState()
+
         await updateYearState()
         saveState()
     }

@@ -15,7 +15,7 @@ export const BrandNames = () => {
 }
 
 const eventHandler = (e) => {
-    if(e.target.name === 'brand'){
+    if (e.target.name === 'brand') {
         const value = e.target.value
         transientBrands.name = value
 
@@ -26,18 +26,35 @@ const transientBrands = {
     name: ''
 }
 
-export const getTransientBrands = () => {
-    return structuredClone(transientBrands)
-}
+
 
 export const updateBrandNameState = async () => {
     const response = await fetch('http://localhost:8088/brandNames')
     const brands = await response.json()
 
-    for (const brand of brands) {
-        if(brand.name === transientBrands.name){
-            debugger
-            setBrandNameState(brand.id)
+    if (brands.length === 0) {
+        setBrandNameState(1)
+        const response2 = await fetch('http://localhost:8088/brandNames', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(transientBrands)
+        })
+    } else {
+        const filteredBrands = brands.filter((brand) => brand.name === transientBrands.name)
+
+        if (filteredBrands.length === 1 && filteredBrands.length < 2) {
+            setBrandNameState(filteredBrands[0].name)
+        } else {
+            setBrandNameState(brands.length + 1)
+            const response3 = await fetch('http://localhost:8088/brandNames', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(transientBrands)
+            })
         }
     }
 }

@@ -1,6 +1,3 @@
-import { getTransientBrands } from "./BrandNames.js"
-import { getTransientPurchaseYear } from "./PurchaseYear.js"
-
 const transientState = {
     ownsBlueJeans: null,
     socioLocationId: 0,
@@ -29,39 +26,7 @@ export const setPurchaseYearState = (choice) => {
     transientState.purchaseYearId = choice
 }
 
-//  save transient state to permanent state
-
-// SAVE YEAR STATE
-export const saveYearState = async () => {
-    const yearState = getTransientPurchaseYear()
-
-    const postOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(yearState)
-    }
-
-    await fetch('http://localhost:8088/purchaseYears', postOptions)
-
-}
-// SAVE JEANS BRAND STATE
-export const saveBrandState = async () => {
-
-    const brandState = getTransientBrands()
-
-    const postOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(brandState)
-    }
-
-    await fetch('http://localhost:8088/brandNames', postOptions)
-}
-
+// Save transient state
 export const saveState = async () => {
     const postOptions = {
         method: 'POST',
@@ -84,23 +49,3 @@ export const saveState = async () => {
 }
 
 
-/* 
-capture change of brand name
-
-store it in some transient state
-
-when submit is hit, first update brand names in api
-
-then grab brand names from api and update the transient state in this module with brandname id
-
-then do same steps with purchase year before posting the submissions
-
-*/
-
-/* 
-
-I NEED TO FETCH THE DATABASE TO CHECK IF THE JEANS OR YEAR ARE ALREADY THERE
-
-THEN UPDATE TRANSIENT ACCORDINGLY
-
-*/

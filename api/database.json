@@ -9,6 +9,13 @@
       "ownsBlueJeans": false,
       "socioLocationId": 3,
       "id": 2
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 2,
+      "brandNameId": 1,
+      "purchaseYearId": 1,
+      "id": 3
     }
   ],
   "socioLocations": [
@@ -26,9 +33,15 @@
     }
   ],
   "brandNames": [
-
+    {
+      "name": "yea",
+      "id": 1
+    }
   ],
   "purchaseYears": [
-
+    {
+      "year": 12312,
+      "id": 1
+    }
   ]
 }
