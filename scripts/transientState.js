@@ -1,35 +1,41 @@
-// Set up the transient state data structure and provide initial values
 const transientState = {
-    ownsBlueJeans: null,
-    socioLocationId: 0
+      ownsBlueJeans: null,
+      socioLocationId: 0
+    }
+
+// create functions to update choices (setter functions)
+
+// we export this to JeansChoices and create event listener
+
+export const setOwnsBlueJeans = (choice) => {
+    transientState.ownsBlueJeans = choice
 }
 
-// Functions to modify each property of transient state
+// Export this to LocationChoices.js and create event listener
 
-export const setOwnsBlueJeans = (chosenOwnership) => {
-    transientState.ownsBlueJeans = chosenOwnership
+export const setSocioLocation = (choice) => {
+    transientState.socioLocationId = choice
 }
 
-export const setSocioLocationId = (chosenLocation) => {
-    transientState.socioLocationId = chosenLocation
-}
+//  save transient state to permanent state
 
-export const saveSurveySubmission = async () => {
-    // start building the POST request here
+export const saveState = async () => {
     const postOptions = {
         method: 'POST',
         headers: {
-            "content-Type": "application/json"
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(transientState)
     }
 
-    // send to api
-    
-    transientState.ownsBlueJeans === true || transientState.ownsBlueJeans ===false && transientState.socioLocationId > 0?
-        await fetch('http://localhost:8088/submissions', postOptions):
-        window.alert('You must complete the form')
-
-    const newSubmissionEvent = new CustomEvent("newSubmissionCreated")
-    document.dispatchEvent(newSubmissionEvent)
+    // check that transient state has valid values
+    if(transientState.ownsBlueJeans !== null && transientState.socioLocationId > 0){
+        await fetch('http://localhost:8088/submissions', postOptions)
+        // add a CustomEvent 
+        const myEvent = new CustomEvent('update')
+        // deploy it to document
+        document.dispatchEvent(myEvent)
+    }else {
+        window.alert('You must choose both options')
+    }
 }

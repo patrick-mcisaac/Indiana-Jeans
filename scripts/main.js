@@ -1,25 +1,25 @@
 import { JeanChoices } from "./JeanChoices.js";
-import { LocationChoices } from "./LocationChoices.js";
+import { LocationChoices } from "./LocationChoices.js"
 import { SubmissionButton } from "./SubmissionButton.js";
 import { SubmissionList } from "./SubmissionList.js";
 
-const container = document.querySelector('#container')
+const container = document.getElementById('container')
 
 const render = async () => {
+
     const jeansHTML = JeanChoices()
-    const locationHTML = await LocationChoices()
-    const submissionBtn = SubmissionButton()
+    const locationsHTML = await LocationChoices()
+    const submitBtn = SubmissionButton()
     const submissions = await SubmissionList()
 
     container.innerHTML = `
     ${jeansHTML}
-    ${locationHTML}
-    ${submissionBtn}
+    ${locationsHTML}
+    ${submitBtn}
     ${submissions}
     `
 }
 
-// create event listener for our custom event
-document.addEventListener("newSubmissionCreated", render)
-
 render()
+
+document.addEventListener('update', render)

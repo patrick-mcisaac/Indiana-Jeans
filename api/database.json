@@ -6,29 +6,9 @@
       "socioLocationId": 1
     },
     {
-      "id": 2,
-      "ownsBlueJeans": true,
-      "socioLocationId": 2
-    },
-    {
       "ownsBlueJeans": false,
       "socioLocationId": 3,
-      "id": 3
-    },
-    {
-      "ownsBlueJeans": false,
-      "socioLocationId": 5,
-      "id": 4
-    },
-    {
-      "ownsBlueJeans": true,
-      "socioLocationId": 3,
-      "id": 5
-    },
-    {
-      "ownsBlueJeans": true,
-      "socioLocationId": 4,
-      "id": 6
+      "id": 2
     }
   ],
   "socioLocations": [
