@@ -2,9 +2,21 @@ Table submissions {
     id int [pk]
     ownsBlueJeans bool
     socioLocationId int [ref: > socioLocations.id]
+    brandId int [ref: > brandNames.id]
+    purchaseYearId int [ref: > purchaseYear.id]
 }
 
 Table socioLocations {
     id int [pk]
     label varchar
+}
+
+Table brandNames {
+    id int [pk]
+    brand varchar
+}
+
+Table purchaseYear{
+    id int [pk]
+    year int
 }
