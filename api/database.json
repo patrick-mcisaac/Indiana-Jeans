@@ -23,14 +23,12 @@
     {
       "id": 3,
       "label": "Semi-Rural"
-    },
-    {
-      "id": 4,
-      "label": "Rural"
-    },
-    {
-      "label": "Metropolitan",
-      "id": 5
     }
+  ],
+  "brandNames": [
+
+  ],
+  "purchaseYears": [
+
   ]
 }
