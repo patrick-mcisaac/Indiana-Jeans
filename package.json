@@ -1,0 +1,28 @@
+{
+  "name": "indiana-jeans",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrick-mcisaac/Indiana-Jeans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrick-mcisaac/Indiana-Jeans/issues"
+  },
+  "homepage": "https://github.com/patrick-mcisaac/Indiana-Jeans#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel": "^5.8.38",
+    "babel-jest": "^30.0.5",
+    "jest": "^30.0.5"
+  }
+}

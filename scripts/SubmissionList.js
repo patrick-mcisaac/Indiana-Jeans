@@ -18,5 +18,4 @@ export const SubmissionList = async () => {
             ${submissionsHTML}
         </div>
     `
-
 }
