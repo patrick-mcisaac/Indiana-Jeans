@@ -27,6 +27,27 @@
       "brandNameId": 3,
       "purchaseYearId": 3,
       "id": 4
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 7,
+      "purchaseYearId": 7,
+      "id": 5
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 8,
+      "purchaseYearId": 8,
+      "id": 6
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 9,
+      "purchaseYearId": 6,
+      "id": 7
     }
   ],
   "socioLocations": [
@@ -55,6 +76,30 @@
     {
       "name": "Djenco",
       "id": 3
+    },
+    {
+      "name": "yes",
+      "id": 4
+    },
+    {
+      "name": "asdfd",
+      "id": 5
+    },
+    {
+      "name": "fds",
+      "id": 6
+    },
+    {
+      "name": "far",
+      "id": 7
+    },
+    {
+      "name": "asdsad",
+      "id": 8
+    },
+    {
+      "name": "aee",
+      "id": 9
     }
   ],
   "purchaseYears": [
@@ -69,6 +114,26 @@
     {
       "year": 2022,
       "id": 3
+    },
+    {
+      "year": 1,
+      "id": 4
+    },
+    {
+      "year": 145,
+      "id": 5
+    },
+    {
+      "year": 444,
+      "id": 6
+    },
+    {
+      "year": 54645,
+      "id": 7
+    },
+    {
+      "year": 555,
+      "id": 8
     }
   ]
 }

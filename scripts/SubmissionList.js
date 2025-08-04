@@ -9,7 +9,6 @@ export const SubmissionList = async () => {
 
   const submissionsHTML = submissions
     .map((submission) => {
-      debugger
       const brandId = submission.brandName.id
       const yearId = submission.purchaseYear.id
       let html = `
@@ -19,7 +18,7 @@ export const SubmissionList = async () => {
             <p>Location: ${submission.socioLocation.label}</p>
             `
 
-      if (brandId !== 1) {
+      if (brandId !== 1 && submission.ownsBlueJeans) {
         html += `<p>Brand Names: ${submission.brandName.name}</p>`
       }
       if (yearId !== 1) {
