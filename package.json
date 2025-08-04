@@ -2,7 +2,6 @@
   "name": "indiana-jeans",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -24,5 +23,8 @@
     "babel": "^5.8.38",
     "babel-jest": "^30.0.5",
     "jest": "^30.0.5"
+  },
+  "prettier": {
+    "semi": false
   }
 }
