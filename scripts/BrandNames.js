@@ -21,7 +21,7 @@ const eventHandler = (e) => {
 }
 
 const transientBrands = {
-    name: "",
+    name: ""
 }
 
 export const updateBrandNameState = async () => {
@@ -39,9 +39,9 @@ export const updateBrandNameState = async () => {
         const response3 = await fetch("http://localhost:8088/brandNames", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify(transientBrands),
+            body: JSON.stringify(transientBrands)
         })
     }
 }

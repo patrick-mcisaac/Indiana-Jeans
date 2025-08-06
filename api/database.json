@@ -1,139 +1,213 @@
 {
-    "submissions": [
-        {
-            "id": 1,
-            "ownsBlueJeans": false,
-            "socioLocationId": 1,
-            "brandNameId": 1,
-            "purchaseYearId": 1
-        },
-        {
-            "ownsBlueJeans": false,
-            "socioLocationId": 3,
-            "id": 2,
-            "brandNameId": 1,
-            "purchaseYearId": 1
-        },
-        {
-            "ownsBlueJeans": true,
-            "socioLocationId": 2,
-            "brandNameId": 2,
-            "purchaseYearId": 2,
-            "id": 3
-        },
-        {
-            "ownsBlueJeans": false,
-            "socioLocationId": 3,
-            "brandNameId": 3,
-            "purchaseYearId": 3,
-            "id": 4
-        },
-        {
-            "ownsBlueJeans": false,
-            "socioLocationId": 2,
-            "brandNameId": 7,
-            "purchaseYearId": 7,
-            "id": 5
-        },
-        {
-            "ownsBlueJeans": false,
-            "socioLocationId": 2,
-            "brandNameId": 8,
-            "purchaseYearId": 8,
-            "id": 6
-        },
-        {
-            "ownsBlueJeans": false,
-            "socioLocationId": 2,
-            "brandNameId": 9,
-            "purchaseYearId": 6,
-            "id": 7
-        }
-    ],
-    "socioLocations": [
-        {
-            "id": 1,
-            "label": "Urban"
-        },
-        {
-            "id": 2,
-            "label": "Suburban"
-        },
-        {
-            "id": 3,
-            "label": "Semi-Rural"
-        }
-    ],
-    "brandNames": [
-        {
-            "name": " ",
-            "id": 1
-        },
-        {
-            "name": "tree",
-            "id": 2
-        },
-        {
-            "name": "Djenco",
-            "id": 3
-        },
-        {
-            "name": "yes",
-            "id": 4
-        },
-        {
-            "name": "asdfd",
-            "id": 5
-        },
-        {
-            "name": "fds",
-            "id": 6
-        },
-        {
-            "name": "far",
-            "id": 7
-        },
-        {
-            "name": "asdsad",
-            "id": 8
-        },
-        {
-            "name": "aee",
-            "id": 9
-        }
-    ],
-    "purchaseYears": [
-        {
-            "year": 0,
-            "id": 1
-        },
-        {
-            "year": 333,
-            "id": 2
-        },
-        {
-            "year": 2022,
-            "id": 3
-        },
-        {
-            "year": 1,
-            "id": 4
-        },
-        {
-            "year": 145,
-            "id": 5
-        },
-        {
-            "year": 444,
-            "id": 6
-        },
-        {
-            "year": 54645,
-            "id": 7
-        },
-        {
-            "year": 555,
-            "id": 8
-        }
-    ]
+  "submissions": [
+    {
+      "id": 1,
+      "ownsBlueJeans": false,
+      "socioLocationId": 1,
+      "brandNameId": 1,
+      "purchaseYearId": 1
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 3,
+      "id": 2,
+      "brandNameId": 1,
+      "purchaseYearId": 1
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 2,
+      "brandNameId": 2,
+      "purchaseYearId": 2,
+      "id": 3
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 3,
+      "brandNameId": 3,
+      "purchaseYearId": 3,
+      "id": 4
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 7,
+      "purchaseYearId": 7,
+      "id": 5
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 8,
+      "purchaseYearId": 8,
+      "id": 6
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 9,
+      "purchaseYearId": 6,
+      "id": 7
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 7,
+      "purchaseYearId": 9,
+      "id": 8
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 1,
+      "brandNameId": 10,
+      "purchaseYearId": 10,
+      "id": 9
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 11,
+      "purchaseYearId": 10,
+      "id": 10
+    },
+    {
+      "ownsBlueJeans": false,
+      "socioLocationId": 2,
+      "brandNameId": 12,
+      "purchaseYearId": 6,
+      "id": 11
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 2,
+      "brandNameId": 13,
+      "purchaseYearId": 11,
+      "id": 12
+    },
+    {
+      "ownsBlueJeans": true,
+      "socioLocationId": 1,
+      "brandNameId": 14,
+      "purchaseYearId": 9,
+      "id": 13
+    }
+  ],
+  "socioLocations": [
+    {
+      "id": 1,
+      "label": "Urban"
+    },
+    {
+      "id": 2,
+      "label": "Suburban"
+    },
+    {
+      "id": 3,
+      "label": "Semi-Rural"
+    }
+  ],
+  "brandNames": [
+    {
+      "name": " ",
+      "id": 1
+    },
+    {
+      "name": "tree",
+      "id": 2
+    },
+    {
+      "name": "Djenco",
+      "id": 3
+    },
+    {
+      "name": "yes",
+      "id": 4
+    },
+    {
+      "name": "asdfd",
+      "id": 5
+    },
+    {
+      "name": "fds",
+      "id": 6
+    },
+    {
+      "name": "far",
+      "id": 7
+    },
+    {
+      "name": "asdsad",
+      "id": 8
+    },
+    {
+      "name": "aee",
+      "id": 9
+    },
+    {
+      "name": "weeed",
+      "id": 10
+    },
+    {
+      "name": "sdfsd",
+      "id": 11
+    },
+    {
+      "name": "meeeeeee",
+      "id": 12
+    },
+    {
+      "name": "toiii",
+      "id": 13
+    },
+    {
+      "name": "dhfghdfgdfg",
+      "id": 14
+    }
+  ],
+  "purchaseYears": [
+    {
+      "year": 0,
+      "id": 1
+    },
+    {
+      "year": 333,
+      "id": 2
+    },
+    {
+      "year": 2022,
+      "id": 3
+    },
+    {
+      "year": 1,
+      "id": 4
+    },
+    {
+      "year": 145,
+      "id": 5
+    },
+    {
+      "year": 444,
+      "id": 6
+    },
+    {
+      "year": 54645,
+      "id": 7
+    },
+    {
+      "year": 555,
+      "id": 8
+    },
+    {
+      "year": 1234,
+      "id": 9
+    },
+    {
+      "year": 3333,
+      "id": 10
+    },
+    {
+      "year": 888,
+      "id": 11
+    }
+  ]
 }

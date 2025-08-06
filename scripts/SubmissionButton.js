@@ -8,7 +8,6 @@ const handleSubmit = async (e) => {
     if (e.target.id === "submission-button") {
         // get state and post to DB
         // update purchase year and brand
-
         await updateBrandNameState()
         await updateYearState()
         saveState()
