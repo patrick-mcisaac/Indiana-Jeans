@@ -1,14 +1,13 @@
-import { JeanChoices } from "./JeanChoices.js";
+import { JeanChoices } from "./JeanChoices.js"
 import { LocationChoices } from "./LocationChoices.js"
-import { SubmissionButton } from "./SubmissionButton.js";
-import { SubmissionList } from "./SubmissionList.js";
-import { BrandNames } from "./BrandNames.js";
-import { PurchaseYear } from "./PurchaseYear.js";
+import { SubmissionButton } from "./SubmissionButton.js"
+import { SubmissionList } from "./SubmissionList.js"
+import { BrandNames } from "./BrandNames.js"
+import { PurchaseYear } from "./PurchaseYear.js"
 
-const container = document.getElementById('container')
+const container = document.getElementById("container")
 
 const render = async () => {
-
     const jeansHTML = JeanChoices()
     const locationsHTML = await LocationChoices()
     const submitBtn = SubmissionButton()
@@ -28,4 +27,4 @@ const render = async () => {
 
 render()
 
-document.addEventListener('update', render)
+document.addEventListener("update", render)
